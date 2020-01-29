@@ -27,7 +27,7 @@ readonly ANSIBLE="2.5.14"
 if [ "$SUDO_USER" = "appveyor" ]; then
     rm /etc/apt/sources.list.d/*
     rm /etc/apt/sources.list
-    curl https://cloudbox.works/scripts/apt-sources/xenial.txt | tee /etc/apt/sources.list
+    curl https://raw.githubusercontent.com/DomGrieco/cloudbox.github.io/master/scripts/apt-sources/xenial.txt | tee /etc/apt/sources.list
     apt-get update
 fi
 
